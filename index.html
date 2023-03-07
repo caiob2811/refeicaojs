@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <title>Document</title>
+   </head>
+   <body>
+    <h1> Refeições e sua cal</h1>
+    <form>
+        Digite entre 1 e 14: <br>
+        <input type="text" name="" id="dia">
+        <br></br>
+        1 a 4 - pratos normais <br></br>
+        5 a 8 - sobremesas <br></br>
+        9 a 11 - bebidas
+        <br><br>
+        <button onclick="calcular();return false;">Calcular</button>
+        <br></br>
+        <input type="reset" value="limpar formulário">
+        <br></br>
+    </form>
+    </html>
+    <script>
+        function calcular() {
+            var diaj = parseInt(document.getElementById("dia").value);
+            switch (diaj) {
+                case 1:alert("Comida: - Vegetariano 180cal");
+    
+                break;
+                case 2: alert("Comida:  - Peixe 230cal");
+    
+                break;
+                case 3: alert("Comida: - Frango 250cal");
+               
+                break;
+                case 4: alert("Comida: - Carne 350cal");
+               
+                break;
+                case 5: alert("Sobremesa: – Abacaxi 75 cal");
+               
+                break;
+                case 6: alert(" Sobremesa: - Sorvete diet 110 cal");
+    
+                break;
+                case 7: alert("Sobremesa: - Mouse chocolate 200 cal");
+                break;
+
+                case 8: alert("Sobremesa: - Mouse diet 170cal");
+                break;
+               
+                case 9: alert(" Bebidas: - Chá 20 cal ");
+                break;
+
+                case 10: alert(" Bebidas: - Suco de laranja 70 cal  ");
+                break;
+
+                case 11: alert(" Bebidas: -Suco de melão 100 cal ");
+                break;
+
+        
+                default:alert("opção inválida");
+                break;
+            }
+        }
+    </script>
+    
